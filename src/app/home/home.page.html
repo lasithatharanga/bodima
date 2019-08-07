@@ -19,9 +19,9 @@
       </p>  
       <br>
 
-      <ion-input placeholder="Ex: Ran Banda"></ion-input>
+      <ion-input placeholder="Ex: Ran Banda" [(ngModel)]="name" name="name"></ion-input>
 
-      <ion-button shape="round" expand="block">Continue</ion-button>
+      <ion-button shape="round" expand="block" (click)="addName()" >Continue</ion-button>
 
     </ion-card-content>
   </ion-card>

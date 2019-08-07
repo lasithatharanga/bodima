@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 
 import { IonicStorageModule } from '@ionic/storage';
+import { LocaldbService } from './services/localdb.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -24,6 +25,7 @@ import { IonicStorageModule } from '@ionic/storage';
   providers: [
     StatusBar,
     SplashScreen,
+    Storage,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
