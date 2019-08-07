@@ -5,7 +5,7 @@ ion-toolbar{
     ion-title{
         --color:rgb(66,129,205);
         font-weight: bold;
-        font-size: 24px;
+        font-size: 18px;
         --font-family: 'Poppins';
         text-align: center;
     }
@@ -14,12 +14,13 @@ ion-content{
     --background: rgb(221,237,255);
     --background: linear-gradient(261deg, rgba(221,237,255,1) 0%, rgba(222,255,245,1) 100%);
     ion-card{
-        margin-top: 40px;
+        margin-top: 10px;
         border-radius: 28px;
-        text-align: left;
+        text-align: center;
         --color: #fff;
 
         ion-card-content{
+            font-weight: bold;
             h2{
                 font-size: 20px;
                 font-weight: bold;

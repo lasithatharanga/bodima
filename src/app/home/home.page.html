@@ -18,11 +18,11 @@
       Please enter your name to continue.
       </p>  
       <br>
+      <form  #form="ngForm" (ngSubmit)="addName(form)">
+      <ion-input placeholder="Ex: Ran Banda" ngModel required name="name"></ion-input>
 
-      <ion-input placeholder="Ex: Ran Banda" [(ngModel)]="name" name="name"></ion-input>
-
-      <ion-button shape="round" expand="block" (click)="addName()" >Continue</ion-button>
-
+      <ion-button shape="round" expand="block" type="submit" [disabled]="form.invalid">Continue</ion-button>
+      </form>
     </ion-card-content>
   </ion-card>
 </ion-content>

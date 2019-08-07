@@ -15,7 +15,7 @@ export class HomePage {
     if(name!=null || name!=undefined || name!=""){
 
       this.localdb.setName(this.name).then(()=>{
-        this.navCtrl.navigateForward('resource');
+        this.navCtrl.navigateRoot('resource');
       });
     }
   }
