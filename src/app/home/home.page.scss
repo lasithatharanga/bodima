@@ -1,1 +1,51 @@
 
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+ion-toolbar{
+    --opacity:0.3;
+
+    ion-title{
+        --color:rgb(66,129,205);
+        font-weight: bold;
+        font-size: 24px;
+        --font-family: 'Poppins';
+        text-align: center;
+    }
+}
+ion-content{
+    --background: rgb(221,237,255);
+    --background: linear-gradient(261deg, rgba(221,237,255,1) 0%, rgba(222,255,245,1) 100%);
+    ion-card{
+        margin-top: 40px;
+        border-radius: 28px;
+        text-align: left;
+        --color: #fff;
+
+        ion-card-content{
+            h2{
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+
+            ion-button{
+                --color:#222;
+                --box-shadow:none;
+
+            }
+        }
+    }
+}
+
+.card1{
+    background: rgb(66,129,205);
+    background: linear-gradient(261deg, rgba(66,129,205,1) 0%, rgba(38,235,176,1) 100%);
+
+    ion-button{
+        --background: rgb(255,255,255);
+    }
+    ion-input{
+        --background: linear-gradient(90deg, rgba(205,244,241,1) 0%, rgba(197,246,232,1) 100%);
+        border-radius: 10px;
+        color: #007096
+    }
+}
