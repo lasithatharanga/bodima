@@ -13,6 +13,7 @@ export class LocaldbService {
 
   setName(name):Promise<any>{
     return new Promise<any>((resolve, reject) => {
+      console.log(name);
       resolve (this.storage.set("name", name));
     });
   

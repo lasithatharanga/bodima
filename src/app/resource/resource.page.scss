@@ -34,11 +34,32 @@ ion-content{
             }
         }
     }
+    .swiper-pagination {
+        position: fixed;
+        bottom: 0px;
+        padding-bottom: 3px;
+        padding-top: 20px;
+     }
 }
 
 .card1{
     background: rgb(66,129,205);
     background: linear-gradient(261deg, rgba(66,129,205,1) 0%, rgba(38,235,176,1) 100%);
+
+    ion-button{
+        --background: rgb(255,255,255);
+        --ripple-color: #2E86C1  
+    }
+    ion-input{
+        --background: linear-gradient(90deg, rgba(205,244,241,1) 0%, rgba(197,246,232,1) 100%);
+        border-radius: 10px;
+        color: #007096
+    }
+    
+}
+.card2{
+    background: rgb(72,202,203);
+    background: linear-gradient(90deg, rgba(72,202,203,1) 0%, rgba(144,100,255,1) 100%);
 
     ion-button{
         --background: rgb(255,255,255);

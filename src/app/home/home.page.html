@@ -25,4 +25,11 @@
       </form>
     </ion-card-content>
   </ion-card>
+  <h1>{{ (item | async)?.name }}</h1>
+  <ul>
+      <li *ngFor="let user of users | async">
+        {{ user.name }}
+      </li>
+    </ul>
+
 </ion-content>
